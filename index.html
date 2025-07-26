@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="Logo" />
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <img class="close-menu" src="images/x.svg" alt="">
+          </ul>
+          <img class="open-menu" src="images/bars.svg" alt="">
+        </nav>
+        <div class="hero-content">
+          <p>Web Developer & Designer</p>
+          <h1>
+            Hi, I'm
+            <span class="highlight"
+              >Deepanjan <br />
+              Patra</span
+            >
+            from India
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!----------------About Section------------------->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="About Me" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="about-title">About Me</h1>
+            <p>
+              I am a passionate web developer with a keen interest in creating
+              dynamic and responsive websites. With a background in both design
+              and development, I strive to build user-friendly interfaces that
+              provide an exceptional user experience.
+            </p>
+            <div class="tab-titles">
+              <div class="tab-link active-link" >Skills</div>
+              <div class="tab-link" >Education</div>
+              <div class="tab-link" >Experience</div>
+            </div>
+            <div class="tab-content active-content" id="skills">
+              <ul>
+                <li><span>Languages</span><br> C, C++</li>
+                <li><span>Databases</span><br> SQL (basic), MongoDB</li>
+                <li><span>Frontend Development</span><br> HTML, CSS, JavaScript, React</li>
+                <li><span>Backend Development</span><br> Node.js</li>
+                <li><span>Responsive Design</span><br> Media Queries, Flexbox</li>
+                <li><span>Tools</span><br> VS Code, Git, GitHub</li>
+              </ul>
+          </div>
+            <div class="tab-content" id="education">
+              <ul>
+                <li><span>B.Tech in Computer Science Engineering</span><br>
+                  Government College of Engineering and Leather Technology (GCELT), MAKAUT<br>
+                  Year: 2022–2026 (Expected)
+                </li>
+                <li><span>Diploma in Computer Science and Technology</span><br>
+                  The Calcutta Technical School (CTS), WBSCTE<br>
+                  Duration: 2020 – 2023
+                </li>
+            </div>
+            <div class="tab-content" id="experience">
+              <ul>
+                <li><span>Internship</span><br> Web Development Intern at ABC Company</li>
+                <li><span>Duration</span><br> June 2022 - August 2022</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!----------------Projects Section------------------->
+    <section id="projects">
+      <div class="container">
+        <h1 class="projects-title">Projects</h1>
+        <div class="projects-list">
+          <div class="project-card">
+            <img src="images/work-1.png" alt="Project 1" />
+            <div class="layer">
+              <h3>Uber Clone
+</h3>
+              <p>Ride Booking Web App.</p>
+              <a href="https://chipper-monstera-a0011c.netlify.app/"><img src="images/link.svg" alt="project link"></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="images/work-2.png" alt="Project 2" />
+            <div class="layer">
+              <h3>Chat App 
+</h3>
+              <p>Real-time Messaging System.</p>
+              <a href="#"><img src="images/link.svg" alt="project link"></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="images/work-3.png" alt="Project 3" />
+            <div class="layer">
+              <h3>Project Title 3</h3>
+              <p>Short description of the project.</p>
+              <a href="#"><img src="images/link.svg" alt="project link"></a>
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+    <!----------------Contact Section------------------->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="contact-title">Contact Me</h1>
+            <p><img src="images/email.svg" alt="Email">deepanjanpatra6@gmail.com</p>
+            <p><img src="images/phone.svg" alt="Phone">+91 83890 61959</p>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/deepanjan-patra-246a8426a"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+              <a href="https://github.com/patradeep"><img src="images/github.svg" alt="GitHub"></a>
+              <a href="https://wa.me/918389061959"><img src="images/whatsapp.svg" alt="WhatsApp"></a>
+            </div>
+            <a class="download-cv" href="images/Deepanjan_Patra.pdf" download>Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+              <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+            <p class="success-message"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+    
+      <script src="script.js"></script>
+    
+</html>
