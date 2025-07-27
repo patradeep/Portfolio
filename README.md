@@ -1,4 +1,6 @@
-# Portfolio Website
+# Deepanjan Patra - Portfolio Website
+
+![Portfolio Background](images/background.png)
 
 A modern, responsive portfolio website showcasing my work as a Web Developer & Designer.
 
