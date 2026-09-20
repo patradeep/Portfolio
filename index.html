@@ -1,152 +1,681 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <section id="header">
-      <div class="container">
-        <nav>
-          <img src="images/logo.png" alt="Logo" />
-          <ul>
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <img class="close-menu" src="images/x.svg" alt="">
-          </ul>
-          <img class="open-menu" src="images/bars.svg" alt="">
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepanjan Patra | Full-Stack Software Engineer</title>
+  <meta name="description"
+    content="Portfolio of Deepanjan Patra - Full-Stack Software Engineer (B.Tech CSE, 2026 Batch) specializing in React.js, Node.js, Express.js, PostgreSQL/MongoDB, and WebSockets." />
+  <meta name="author" content="Deepanjan Patra" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header id="header-nav">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Deepanjan Patra Homepage">
+        <img src="images/logo.png" alt="Deepanjan Logo" />
+      </a>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About &amp; Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#resume-banner" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <img class="close-menu" id="close-menu-btn" src="images/x.svg" alt="Close menu" />
+      </ul>
+
+      <div class="nav-actions">
+        <a href="images/Deepanjan_Patra.pdf" download="Deepanjan_Patra_Resume.pdf" class="btn btn-outline-pink btn-sm"
+          id="nav-resume-btn">
+          Resume
+        </a>
+        <img class="open-menu" id="open-menu-btn" src="images/bars.svg" alt="Open menu" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container hero-wrapper">
         <div class="hero-content">
-          <p>Web Developer & Designer</p>
-          <h1>
-            Hi, I'm
-            <span class="highlight"
-              >Deepanjan <br />
-              Patra</span
-            >
-            from India
+          <div class="availability-badge">
+            <span class="pulse-dot"></span>
+            Available for Full-Stack Opportunities
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <br />
+            <span class="name-highlight">Deepanjan Patra</span>
           </h1>
+
+          <div class="hero-role-wrapper">
+            <span class="role-prefix">&gt;</span>
+            <span class="role-typing" id="typed-role">Full-Stack Software Engineer</span>
+          </div>
+
+          <p class="hero-description">
+            Ownership-driven Full-Stack Software Engineer (B.Tech CSE, 2026 Batch) experienced in architecting,
+            building, and deploying scalable web applications from scratch using JavaScript, React.js, SQL, Node.js, and
+            WebSockets.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary" id="hero-projects-btn">Explore Projects</a>
+            <a href="images/Deepanjan_Patra.pdf" download="Deepanjan_Patra_Resume.pdf" class="btn btn-secondary"
+              id="hero-resume-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline-pink" id="hero-contact-btn">Get in Touch</a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="hero-socials-label">Connect:</span>
+            <a href="https://github.com/patradeep" target="_blank" rel="noopener noreferrer" class="social-pill"
+              aria-label="GitHub">
+              <img src="images/github.svg" alt="GitHub" />
+            </a>
+            <a href="https://www.linkedin.com/in/deepanjan-patra-246a8426a" target="_blank" rel="noopener noreferrer"
+              class="social-pill" aria-label="LinkedIn">
+              <img src="images/linkedin.svg" alt="LinkedIn" />
+            </a>
+            <a href="mailto:deepanjanpatra69@gmail.com" class="social-pill" aria-label="Email">
+              <img src="images/email.svg" alt="Email" />
+            </a>
+            <a href="https://wa.me/918389061959" target="_blank" rel="noopener noreferrer" class="social-pill"
+              aria-label="WhatsApp">
+              <img src="images/whatsapp.svg" alt="WhatsApp" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Card (Single Photo: user.png) -->
+        <div class="hero-visual">
+          <div class="profile-card-glow">
+            <div class="floating-badge badge-top">
+              <div class="badge-icon code">&#60;/&#62;</div>
+              <div>
+                <div class="badge-text-primary">150+ Problems</div>
+                <div class="badge-text-secondary">LeetCode DSA</div>
+              </div>
+            </div>
+
+            <div class="profile-card">
+              <div class="profile-img-container">
+                <img src="images/user.png" alt="Deepanjan Patra" />
+              </div>
+              <div class="profile-card-footer">
+                <div class="profile-info">
+                  <h4>Deepanjan Patra</h4>
+                  <p>Full-Stack Engineer</p>
+                </div>
+                <div class="profile-status-indicator">
+                  <span class="pulse-dot"></span> Active
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom">
+              <div class="badge-icon star">&#9733;</div>
+              <div>
+                <div class="badge-text-primary">B.Tech CSE (GCELT)</div>
+                <div class="badge-text-secondary">CGPA: 7.5 / 10</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!----------------About Section------------------->
+
+    <!-- Stats Bar -->
+    <section id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-number">150+</div>
+            <div class="stat-label">LeetCode DSA Solved</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Full-Stack Projects</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">7.5 / 8.0</div>
+            <div class="stat-label">B.Tech &amp; Diploma CGPA</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">2026</div>
+            <div class="stat-label">Expected Graduation</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Skills Section -->
     <section id="about">
       <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/user.png" alt="About Me" />
+        <div class="section-tag">Profile &amp; Credentials</div>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">
+          Ownership-driven engineer with proven experience taking end-to-end accountability, resolving production
+          bottlenecks, and delivering high-impact solutions.
+        </p>
+
+        <div class="about-intro-card">
+          <p class="about-bio-text">
+            I am a final-year <strong>Computer Science &amp; Engineering</strong> student at GCELT, Kolkata (2026 Batch)
+            with hands-on experience building and deploying production-grade web applications. Proficient across
+            <strong>JavaScript, React.js, Node.js, SQL/PostgreSQL, and WebSockets</strong>, I combine solid computer
+            science fundamentals with modern AI/LLM-assisted workflows to accelerate delivery cycles and engineer robust
+            user experiences.
+          </p>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="tab-navigation" role="tablist">
+          <button class="tab-btn active-tab" data-tab="skills" role="tab" id="tab-skills-btn">Technical Skills</button>
+          <button class="tab-btn" data-tab="education" role="tab" id="tab-education-btn">Education</button>
+          <button class="tab-btn" data-tab="experience" role="tab" id="tab-experience-btn">Problem Solving &amp;
+            Highlights</button>
+        </div>
+
+        <!-- Tab 1: Skills -->
+        <div class="tab-pane active-pane" id="pane-skills" role="tabpanel">
+          <div class="skills-categories-grid">
+            <div class="skill-category-card">
+              <div class="category-header">
+                <div class="category-icon">&#9874;</div>
+                <h3>Languages</h3>
+              </div>
+              <div class="skills-pill-list">
+                <span class="skill-badge">JavaScript (ES6+)</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">C++</span>
+                <span class="skill-badge">C</span>
+                <span class="skill-badge">HTML5</span>
+                <span class="skill-badge">CSS3</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="category-header">
+                <div class="category-icon">&#9638;</div>
+                <h3>Frontend</h3>
+              </div>
+              <div class="skills-pill-list">
+                <span class="skill-badge">React.js</span>
+                <span class="skill-badge">Next.js</span>
+                <span class="skill-badge">Responsive UI Design</span>
+                <span class="skill-badge">State Management</span>
+                <span class="skill-badge">Tailwind CSS</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="category-header">
+                <div class="category-icon">&#9881;</div>
+                <h3>Backend &amp; APIs</h3>
+              </div>
+              <div class="skills-pill-list">
+                <span class="skill-badge">Node.js</span>
+                <span class="skill-badge">Express.js</span>
+                <span class="skill-badge">RESTful API Design</span>
+                <span class="skill-badge">JWT Authentication</span>
+                <span class="skill-badge">WebSockets (Socket.io)</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="category-header">
+                <div class="category-icon">&#9776;</div>
+                <h3>Databases</h3>
+              </div>
+              <div class="skills-pill-list">
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">MongoDB</span>
+                <span class="skill-badge">Cloudinary</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="category-header">
+                <div class="category-icon">&#9875;</div>
+                <h3>DevOps &amp; Tools</h3>
+              </div>
+              <div class="skills-pill-list">
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">GitHub</span>
+                <span class="skill-badge">Render</span>
+                <span class="skill-badge">Vercel</span>
+                <span class="skill-badge">Postman</span>
+                <span class="skill-badge">VS Code</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="category-header">
+                <div class="category-icon">&#9734;</div>
+                <h3>Core Strengths</h3>
+              </div>
+              <div class="skills-pill-list">
+                <span class="skill-badge">Data Structures &amp; Algorithms</span>
+                <span class="skill-badge">System Architecture</span>
+                <span class="skill-badge">AI/LLM Workflows</span>
+                <span class="skill-badge">End-to-End Ownership</span>
+              </div>
+            </div>
           </div>
-          <div class="about-col-2">
-            <h1 class="about-title">About Me</h1>
-            <p>
-              I am a passionate web developer with a keen interest in creating
-              dynamic and responsive websites. With a background in both design
-              and development, I strive to build user-friendly interfaces that
-              provide an exceptional user experience.
-            </p>
-            <div class="tab-titles">
-              <div class="tab-link active-link" >Skills</div>
-              <div class="tab-link" >Education</div>
-              <div class="tab-link" >Experience</div>
+        </div>
+
+        <!-- Tab 2: Education -->
+        <div class="tab-pane" id="pane-education" role="tabpanel">
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <div class="timeline-top">
+                <div>
+                  <h3>Bachelor of Technology (B.Tech) in Computer Science &amp; Engineering</h3>
+                  <div class="timeline-institution">Government College of Engineering and Leather Technology (GCELT),
+                    Kolkata</div>
+                </div>
+                <span class="timeline-meta">Expected 2026</span>
+              </div>
+              <p class="timeline-desc">
+                Core coursework in Data Structures, Database Management, Operating Systems, Computer Networks, and
+                Object-Oriented Software Design.
+              </p>
+              <div class="timeline-grade">Academic Performance: CGPA 7.5 / 10</div>
             </div>
-            <div class="tab-content active-content" id="skills">
-              <ul>
-                <li><span>Languages</span><br> C, C++</li>
-                <li><span>Databases</span><br> SQL (basic), MongoDB</li>
-                <li><span>Frontend Development</span><br> HTML, CSS, JavaScript, React</li>
-                <li><span>Backend Development</span><br> Node.js</li>
-                <li><span>Responsive Design</span><br> Media Queries, Flexbox</li>
-                <li><span>Tools</span><br> VS Code, Git, GitHub</li>
-              </ul>
+
+            <div class="timeline-item">
+              <div class="timeline-top">
+                <div>
+                  <h3>Diploma in Computer Science &amp; Engineering</h3>
+                  <div class="timeline-institution">The Calcutta Technical School (CTS), Kolkata</div>
+                </div>
+                <span class="timeline-meta">2020 – 2023</span>
+              </div>
+              <p class="timeline-desc">
+                Intensive technical diploma covering foundational C programming, web fundamentals, discrete mathematics,
+                and algorithms.
+              </p>
+              <div class="timeline-grade">Academic Performance: CGPA 8.0 / 10</div>
+            </div>
           </div>
-            <div class="tab-content" id="education">
+        </div>
+
+        <!-- Tab 3: Problem Solving & Highlights -->
+        <div class="tab-pane" id="pane-experience" role="tabpanel">
+          <div class="experience-grid">
+            <div class="experience-card">
+              <span class="exp-badge">Problem Solving</span>
+              <h3>LeetCode Milestone: 150+ Problems</h3>
+              <div class="exp-role">Data Structures &amp; Algorithms</div>
               <ul>
-                <li><span>B.Tech in Computer Science Engineering</span><br>
-                  Government College of Engineering and Leather Technology (GCELT), MAKAUT<br>
-                  Year: 2022–2026 (Expected)
+                <li>Solved <strong>150+ problems</strong> focusing on Graphs, Trees, Dynamic Programming, and Hash Maps.
                 </li>
-                <li><span>Diploma in Computer Science and Technology</span><br>
-                  The Calcutta Technical School (CTS), WBSCTE<br>
-                  Duration: 2020 – 2023
-                </li>
-            </div>
-            <div class="tab-content" id="experience">
-              <ul>
-                <li><span>Internship</span><br> Web Development Intern at ABC Company</li>
-                <li><span>Duration</span><br> June 2022 - August 2022</li>
+                <li>Rigorous practice optimizing runtime and space complexity using C++ and JavaScript.</li>
               </ul>
             </div>
+
+            <div class="experience-card">
+              <span class="exp-badge">Mindset &amp; Workflows</span>
+              <h3>Ownership &amp; Rapid Execution</h3>
+              <div class="exp-role">Autonomous Engineering</div>
+              <ul>
+                <li>Demonstrated ability to break down ambiguous feature requests into testable, production-ready code.
+                </li>
+                <li>Leveraged modern AI/LLM-assisted workflows to accelerate development, debugging, and code
+                  refactoring cycles.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!----------------Projects Section------------------->
+
+    <!-- Featured Projects Section -->
     <section id="projects">
       <div class="container">
-        <h1 class="projects-title">Projects</h1>
-        <div class="projects-list">
+        <div class="section-tag">Showcase</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">
+          Real-world applications showcasing scalable system architecture, bidirectional WebSockets, and clean code.
+        </p>
+
+        <div class="projects-grid">
+          <!-- Project 1: Uber Clone -->
           <div class="project-card">
-            <img src="images/work-1.png" alt="Project 1" />
-            <div class="layer">
-              <h3>Uber Clone
-</h3>
-              <p>Ride Booking Web App.</p>
-              <a href="https://chipper-monstera-a0011c.netlify.app/"><img src="images/link.svg" alt="project link"></a>
+            <div class="project-thumbnail">
+              <img src="images/work-1.png" alt="Uber Clone Web App" />
+              <div class="project-overlay"></div>
+              <span class="project-badge-tag">Ride-Booking</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Full-Stack Ride-Booking Platform (Uber Clone)</h3>
+              <p class="project-description">
+                Engineered end-to-end ride-booking system with real-time driver-rider synchronization, pickup/drop
+                routing, and responsive frontend.
+              </p>
+              <ul class="project-features">
+                <li>Bidirectional Socket.io events for dynamic ride events &amp; live location updates</li>
+                <li>JWT authentication, role-based authorization, and robust error-handling middleware</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Socket.io</span>
+                <span class="tech-tag">JWT</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://chipper-monstera-a0011c.netlify.app/" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn primary">
+                  <img src="images/link.svg" alt="Link" /> Live Demo
+                </a>
+                <a href="https://github.com/patradeep/uber-clone" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn secondary">
+                  <img src="images/github.svg" alt="GitHub" /> GitHub Repo
+                </a>
+              </div>
             </div>
           </div>
+
+          <!-- Project 2: Real-Time Chat App -->
           <div class="project-card">
-            <img src="images/work-2.png" alt="Project 2" />
-            <div class="layer">
-              <h3>Chat App 
-</h3>
-              <p>Real-time Messaging System.</p>
-              <a href="https://chat-1u7aq1ylt-patradeeps-projects.vercel.app/"><img src="images/link.svg" alt="project link"></a>
+            <div class="project-thumbnail">
+              <img src="images/work-2.png" alt="Real-Time Chat App" />
+              <div class="project-overlay"></div>
+              <span class="project-badge-tag">High-Concurrency</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Real-Time Concurrent Chat Application</h3>
+              <p class="project-description">
+                High-concurrency messaging platform prioritizing low-latency delivery, custom WebSocket dispatchers, and
+                session persistence.
+              </p>
+              <ul class="project-features">
+                <li>Engineered custom WebSocket connection pools to maintain stable socket lifecycles</li>
+                <li>Session persistence, token authentication, and optimized queries for fast history retrieval</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Socket.io</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://chat-1u7aq1ylt-patradeeps-projects.vercel.app/" target="_blank"
+                  rel="noopener noreferrer" class="project-link-btn primary">
+                  <img src="images/link.svg" alt="Link" /> Live Demo
+                </a>
+                <a href="https://github.com/patradeep/chat-app" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn secondary">
+                  <img src="images/github.svg" alt="GitHub" /> GitHub Repo
+                </a>
+              </div>
             </div>
           </div>
+
+          <!-- Project 3: MyStay -->
           <div class="project-card">
-            <img src="images/work-3.png" alt="Project 3" />
-            <div class="layer">
-              <h3>Project Title 3</h3>
-              <p>Short description of the project.</p>
-              <a href="#"><img src="images/link.svg" alt="project link"></a>
+            <div class="project-thumbnail">
+              <img src="images/work-3.png" alt="MyStay Property Listing Platform" />
+              <div class="project-overlay"></div>
+              <span class="project-badge-tag">Full-Stack MVC</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">MyStay – Property Listing Platform</h3>
+              <p class="project-description">
+                Complete MVC rental listing platform with granular permissions, user review systems, and automated cloud
+                media storage pipelines.
+              </p>
+              <ul class="project-features">
+                <li>Full MVC CRUD architecture with user authorization &amp; reviews</li>
+                <li>Cloudinary &amp; Multer image validation, compression, and cloud storage</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Multer</span>
+                <span class="tech-tag">Cloudinary</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/patradeep/MyStay" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn primary">
+                  <img src="images/link.svg" alt="Link" /> Live Demo
+                </a>
+                <a href="https://github.com/patradeep/MyStay" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn secondary">
+                  <img src="images/github.svg" alt="GitHub" /> GitHub Repo
+                </a>
+              </div>
             </div>
           </div>
-          <!-- Add more project cards as needed -->
+
+          <!-- Project 4: NextChat -->
+          <div class="project-card">
+            <div class="project-thumbnail">
+              <img src="images/work-4.png" alt="NextChat 1-on-1 Messaging" />
+              <div class="project-overlay"></div>
+              <span class="project-badge-tag">Next.js &amp; Appwrite</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">NextChat – Real-Time 1-on-1 Messaging</h3>
+              <p class="project-description">
+                Direct messaging platform offering simple, instantaneous 1-on-1 chat with unread indicators, read
+                receipts, and modern UI.
+              </p>
+              <ul class="project-features">
+                <li>Built with Next.js and Appwrite Cloud for real-time WebSockets</li>
+                <li>Fast, responsive modern dark UI with direct user chat routing</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Appwrite Cloud</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">React</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://next-chat-omega-dusky.vercel.app" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn primary">
+                  <img src="images/link.svg" alt="Link" /> Live Demo
+                </a>
+                <a href="https://github.com/patradeep/next-chat" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn secondary">
+                  <img src="images/github.svg" alt="GitHub" /> GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!----------------Contact Section------------------->
+
+    <!-- Resume Showcase Banner -->
+    <section id="resume-banner">
+      <div class="container">
+        <div class="resume-card">
+          <div class="resume-card-inner">
+            <div class="resume-info">
+              <div class="section-tag">Curriculum Vitae</div>
+              <h3>Looking for an Ownership-Driven Full-Stack Engineer?</h3>
+              <p>
+                Download my updated resume to review my technical competencies, full-stack architectures, 150+ LeetCode
+                DSA milestone, and academic credentials.
+              </p>
+              <div class="resume-meta-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                Deepanjan_Patra.pdf (Updated 2026)
+              </div>
+            </div>
+
+            <div class="resume-actions">
+              <a href="images/Deepanjan_Patra.pdf" download="Deepanjan_Patra_Resume.pdf" class="btn btn-primary"
+                id="download-cv-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download Resume
+              </a>
+              <a href="images/Deepanjan_Patra.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"
+                id="view-cv-btn">
+                Preview in Browser
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact">
       <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="contact-title">Contact Me</h1>
-            <p><img src="images/email.svg" alt="Email">deepanjanpatra6@gmail.com</p>
-            <p><img src="images/phone.svg" alt="Phone">+91 83890 61959</p>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/deepanjan-patra-246a8426a"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-              <a href="https://github.com/patradeep"><img src="images/github.svg" alt="GitHub"></a>
-              <a href="https://wa.me/918389061959"><img src="images/whatsapp.svg" alt="WhatsApp"></a>
+        <div class="section-tag">Let's Connect</div>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">
+          Have an open role, an exciting opportunity, or want to collaborate? Reach out anytime!
+        </p>
+
+        <div class="contact-layout">
+          <!-- Info Card -->
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <p style="color: var(--text-muted); margin-top: 8px;">
+              Actively seeking software development engineer (SDE) and full-stack developer roles.
+            </p>
+
+            <div class="contact-details-list">
+              <a href="mailto:deepanjanpatra69@gmail.com" class="contact-item">
+                <div class="contact-item-icon">
+                  <img src="images/email.svg" alt="Email" />
+                </div>
+                <div class="contact-item-text">
+                  <span class="label">Email Address</span>
+                  <span class="value">deepanjanpatra69@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+918389061959" class="contact-item">
+                <div class="contact-item-icon">
+                  <img src="images/phone.svg" alt="Phone" />
+                </div>
+                <div class="contact-item-text">
+                  <span class="label">Phone / WhatsApp</span>
+                  <span class="value">+91 83890 61959</span>
+                </div>
+              </a>
+
+              <a href="https://maps.google.com/?q=Kolkata,+West+Bengal,+India" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ff0055" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-item-text">
+                  <span class="label">Location</span>
+                  <span class="value">Kolkata, West Bengal, India</span>
+                </div>
+              </a>
             </div>
-            <a class="download-cv" href="images/Deepanjan_Patra.pdf" download>Download CV</a>
+
+            <div class="contact-social-section">
+              <h4>Professional Networks</h4>
+              <div class="social-pills-row">
+                <a href="https://github.com/patradeep" target="_blank" rel="noopener noreferrer" class="social-pill"
+                  aria-label="GitHub">
+                  <img src="images/github.svg" alt="GitHub" />
+                </a>
+                <a href="https://www.linkedin.com/in/deepanjan-patra-246a8426a" target="_blank"
+                  rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn">
+                  <img src="images/linkedin.svg" alt="LinkedIn" />
+                </a>
+                <a href="https://wa.me/918389061959" target="_blank" rel="noopener noreferrer" class="social-pill"
+                  aria-label="WhatsApp">
+                  <img src="images/whatsapp.svg" alt="WhatsApp" />
+                </a>
+                <a href="mailto:deepanjanpatra69@gmail.com" class="social-pill" aria-label="Email">
+                  <img src="images/email.svg" alt="Email" />
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input type="email" name="email" placeholder="Your Email" required />
-              <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-              <button type="submit">Send Message</button>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <h3>Send a Message</h3>
+            <p style="color: var(--text-muted); margin-top: 8px; margin-bottom: 20px;">
+              Fill out the form below and I will get back to you promptly.
+            </p>
+
+            <form name="submit-to-google-sheet" id="contact-form">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Alex Smith"
+                  required />
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Your Email</label>
+                <input type="email" id="form-email" name="email" class="form-input" placeholder="alex@company.com"
+                  required />
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Your Message</label>
+                <textarea id="form-message" name="message" class="form-textarea" rows="4"
+                  placeholder="Hi Deepanjan, we would like to discuss a software developer opportunity..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn" id="contact-submit-btn">Send
+                Message</button>
+              <div class="form-status" id="form-status-msg"></div>
             </form>
-            <p class="success-message"></p>
           </div>
         </div>
       </div>
     </section>
-  </body>
-    
-      <script src="script.js"></script>
-    
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-left">
+        <img src="images/logo.png" alt="Deepanjan Patra Logo" />
+        <span class="footer-copy">
+          &copy; 2026 <strong>Deepanjan Patra</strong>. Built with HTML, CSS &amp; JavaScript.
+        </span>
+      </div>
+
+      <button class="back-to-top" id="back-to-top-btn" aria-label="Back to top">
+        Back to Top &uarr;
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

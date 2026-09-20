@@ -1,172 +1,52 @@
-# Deepanjan Patra - Portfolio Website
+# Deepanjan Patra - Full-Stack Software Engineer Portfolio
 
-![Portfolio Background](images/background.png)
+A modern, responsive portfolio website showcasing the technical skills, academic milestones, and engineering projects of Deepanjan Patra.
 
-A modern, responsive portfolio website showcasing my work as a Web Developer & Designer.
-
-## 🌟 About
-
-This portfolio website presents my skills, education, experience, and projects in web development. Built with a focus on clean design, smooth user experience, and mobile responsiveness.
-
+**Live Demo:** [https://deepanjanpatra.me](https://deepanjanpatra.me)  
 **Owner:** Deepanjan Patra  
-**Role:** Web Developer & Designer  
-**Location:** India
-
-## 🚀 Features
-
-- **Responsive Design**: Optimized for all device sizes
-- **Smooth Navigation**: Interactive menu with smooth scrolling
-- **Dynamic Tabs**: Skills, Education, and Experience sections with tab switching
-- **Project Showcase**: Interactive project cards with hover effects
-- **Contact Form**: Functional contact form integrated with Google Sheets
-- **Social Media Integration**: Direct links to professional profiles
-- **CV Download**: Direct download option for resume
-
-## 🛠️ Technologies Used
-
-### Frontend
-- **HTML5**: Semantic markup and structure
-- **CSS3**: Modern styling with animations and responsive design
-- **JavaScript**: Interactive functionality and DOM manipulation
-
-### Skills Highlighted
-- **Languages**: C, C++
-- **Frontend**: HTML, CSS, JavaScript, React
-- **Backend**: Node.js
-- **Databases**: SQL (basic), MongoDB
-- **Tools**: VS Code, Git, GitHub
-- **Design**: Responsive Design, Media Queries, Flexbox
-
-## 📁 Project Structure
-
-```
-Portfolio/
-├── index.html          # Main HTML file
-├── style.css           # Stylesheet
-├── script.js           # JavaScript functionality
-├── CNAME              # Domain configuration
-├── README.md          # Project documentation
-└── images/            # Image assets
-    ├── background.png
-    ├── logo.png
-    ├── user.png
-    ├── work-1.png     # Uber Clone project
-    ├── work-2.png     # Chat App project
-    ├── work-3.png     # Additional project
-    ├── Deepanjan_Patra.pdf  # Resume/CV
-    └── [various icons and graphics]
-```
-
-## 🎯 Sections
-
-### 1. **Hero Section**
-- Professional introduction
-- Eye-catching background design
-- Clear navigation menu
-
-### 2. **About Me**
-- Personal introduction
-- Tabbed interface for:
-  - **Skills**: Technical competencies
-  - **Education**: Academic background (B.Tech CSE, Diploma CST)
-  - **Experience**: Professional experience
-
-### 3. **Projects**
-- **Uber Clone**: Ride booking web application
-- **Chat App**: Real-time messaging system
-- **Additional Projects**: Expandable project showcase
-
-### 4. **Contact**
-- Professional contact information
-- Social media links (LinkedIn, GitHub, WhatsApp)
-- Interactive contact form
-- CV download option
-
-## 📱 Responsive Features
-
-- Mobile-friendly navigation with hamburger menu
-- Adaptive layouts for different screen sizes
-- Touch-friendly interactive elements
-- Optimized images and loading
-
-## 🔗 Live Projects
-
-- **Uber Clone**: [View Live](https://chipper-monstera-a0011c.netlify.app/)
-- **Chat App**: [View Live](https://chat-1u7aq1ylt-patradeeps-projects.vercel.app/)
-
-## 📞 Contact Information
-
-- **Email**: deepanjanpatra6@gmail.com
-- **Phone**: +91 83890 61959
-- **LinkedIn**: [Deepanjan Patra](https://www.linkedin.com/in/deepanjan-patra-246a8426a)
-- **GitHub**: [patradeep](https://github.com/patradeep)
-- **WhatsApp**: [Direct Message](https://wa.me/918389061959)
-
-## 🎓 Education
-
-- **B.Tech in Computer Science Engineering**  
-  Government College of Engineering and Leather Technology (GCELT), MAKAUT  
-  2022–2026 (Expected)
-
-- **Diploma in Computer Science and Technology**  
-  The Calcutta Technical School (CTS), WBSCTE  
-  2020–2023
-
-## 🚀 Getting Started
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/patradeep/Portfolio.git
-   ```
-
-2. **Navigate to the project directory**
-   ```bash
-   cd Portfolio
-   ```
-
-3. **Open in browser**
-   - Simply open `index.html` in your preferred browser
-   - Or use a local server for better development experience
-
-4. **For development**
-   ```bash
-   # Using Python (if installed)
-   python -m http.server 8000
-   
-   # Or using Node.js live-server
-   npx live-server
-   ```
-
-## 🌐 Deployment
-
-This portfolio is optimized for deployment on:
-- GitHub Pages
-- Netlify
-- Vercel
-- Any static hosting service
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-While this is a personal portfolio, feedback and suggestions are welcome! Feel free to:
-- Open an issue for bug reports
-- Suggest improvements
-- Share your thoughts
-
-## 📈 Future Enhancements
-
-- [ ] Add more interactive animations
-- [ ] Implement dark/light theme toggle
-- [ ] Add blog section
-- [ ] Include testimonials section
-- [ ] Add more project showcases
-- [ ] Implement advanced form validation
+**Role:** Ownership-driven Full-Stack Software Engineer (B.Tech CSE, 2026 Batch)  
+**Location:** Kolkata, West Bengal, India
 
 ---
 
-⭐ **If you found this portfolio inspiring, please give it a star!**
+## 🛠️ Technical Competencies
 
-**Built with ❤️ by Deepanjan Patra**
+- **Languages:** JavaScript (ES6+), SQL, C++, C, HTML5, CSS3
+- **Frontend:** React.js, Next.js, Responsive UI Design, State Management, Tailwind CSS
+- **Backend & APIs:** Node.js, Express.js, RESTful API Design, JWT Authentication, WebSockets (Socket.io)
+- **Databases:** PostgreSQL / SQL, MongoDB, Cloudinary
+- **DevOps & Tools:** Git, GitHub, Render, Vercel, Postman, VS Code
+
+---
+
+## 🚀 Featured Projects
+
+### 1. Full-Stack Ride-Booking Platform (Uber Clone)
+- **Stack:** React.js, Node.js, Express.js, MongoDB, Socket.io, REST APIs, JWT
+- **Highlights:** Dynamic ride events, driver-rider location synchronization via Socket.io, JWT auth & role-based middleware.
+- **Links:** [Live Demo](https://chipper-monstera-a0011c.netlify.app/) • [GitHub](https://github.com/patradeep/uber-clone)
+
+### 2. Real-Time Concurrent Chat Application
+- **Stack:** JavaScript, Node.js, Express.js, MongoDB, Socket.io, REST APIs
+- **Highlights:** High-concurrency low-latency messaging, custom WebSocket connection pools, session persistence, optimized MongoDB retrieval.
+- **Links:** [Live Demo](https://chat-1u7aq1ylt-patradeeps-projects.vercel.app/) • [GitHub](https://github.com/patradeep/chat-app)
+
+### 3. MyStay – Full-Stack Property Listing Platform
+- **Stack:** Node.js, Express.js, MongoDB, Multer, Cloudinary, REST APIs
+- **Highlights:** Complete MVC CRUD architecture, granular user permissions, review system, and automated Cloudinary media pipelines.
+- **Links:** [GitHub Repo](https://github.com/patradeep/MyStay)
+
+### 4. NextChat – Real-Time 1-on-1 Messaging Platform
+- **Stack:** Next.js, Appwrite Cloud, WebSockets, Tailwind CSS, React
+- **Highlights:** Instant direct messaging with unread indicators, read receipts, and modern dark UI.
+- **Links:** [Live Demo](https://next-chat-omega-dusky.vercel.app) • [GitHub](https://github.com/patradeep/next-chat)
+
+---
+
+## 🎓 Education & Problem Solving
+
+- **B.Tech in Computer Science & Engineering**  
+  *Government College of Engineering and Leather Technology (GCELT), Kolkata* | CGPA: 7.5 / 10 | Expected 2026
+- **Diploma in Computer Science & Engineering**  
+  *The Calcutta Technical School (CTS), Kolkata* | CGPA: 8.0 / 10 | 2020 – 2023
+- **LeetCode DSA Milestone:** Solved **150+ problems** focusing on Graphs, Trees, Dynamic Programming, and Hash Maps.
